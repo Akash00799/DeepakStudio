@@ -1,3 +1,4 @@
+import HeroSection from "@/components/hero";
 import {
   Accordion,
   AccordionContent,
@@ -18,6 +19,8 @@ function page() {
   return (
     <div>
       <div className="grid-background"></div>
+
+      <HeroSection />
 
       <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
         <div className="container mx-auto px-4 md:px-6">
