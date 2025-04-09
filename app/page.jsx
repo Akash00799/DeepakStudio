@@ -2,6 +2,7 @@ import HeroSection from "@/components/hero";
 import PREWEDDING from "@/app/preWedding/page";
 import WEDDING from "@/app/wedding/page";
 import NEWBORNTODDLER from "@/app/newBornToddler/page";
+import Link from "next/link";
 import {
   Accordion,
   AccordionContent,
@@ -28,25 +29,25 @@ function page() {
             "Discover Exceptional Services with Deepak Studio – Where Creativity
             Meets Perfection!"
           </h2>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {features.map((feature, index) => {
               return (
-                <Card
-                  key={index}
-                  className="border-2 hover:border-primary transition-colors duration-300"
-                >
-                  <CardContent className="pt-6 text-center flex flex-col items-center">
-                    <div className="flex flex-col items-center justify-center">
-                      {feature.icon}
-                      <h3 className="text-xl font-bold mb-2">
-                        {feature.title}
-                      </h3>
-                      <p className="text-muted-foreground">
-                        {feature.description}
-                      </p>
-                    </div>
-                  </CardContent>
-                </Card>
+                <Link key={index} href={`/${feature.slug}`}>
+                  <Card className="border-2 hover:border-primary transition-colors duration-300 cursor-pointer">
+                    <CardContent className="pt-6 text-center flex flex-col items-center">
+                      <div className="flex flex-col items-center justify-center">
+                        {feature.icon}
+                        <h3 className="text-xl font-bold mb-2">
+                          {feature.title}
+                        </h3>
+                        <p className="text-muted-foreground">
+                          {feature.description}
+                        </p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </Link>
               );
             })}
           </div>
