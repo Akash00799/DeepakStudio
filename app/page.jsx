@@ -1,4 +1,7 @@
 import HeroSection from "@/components/hero";
+import PREWEDDING from "@/app/preWedding/page";
+import WEDDING from "@/app/wedding/page";
+import NEWBORNTODDLER from "@/app/newBornToddler/page";
 import {
   Accordion,
   AccordionContent,
@@ -8,10 +11,7 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import { faqs } from "@/data/faqs";
 import { features } from "@/data/features";
-import { preWedding } from "@/data/preWedding";
 import { testimonial } from "@/data/testimonial";
-import { toddler } from "@/data/toddler";
-import { wedding } from "@/data/wedding";
 import Image from "next/image";
 import React from "react";
 
@@ -53,67 +53,11 @@ function page() {
         </div>
       </section>
 
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
-        <div className="container mx-auto px-4 md:px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">PRE-WEDDING</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {preWedding.map((image, index) => (
-              <div key={index} className="relative">
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  layout="intrinsic"
-                  width={500}
-                  height={500}
-                  className="w-full h-auto object-cover rounded-lg shadow-lg"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <PREWEDDING />
 
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
-        <div className="container mx-auto px-4 md:px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">WEDDING</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {wedding.map((image, index) => (
-              <div key={index} className="relative">
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  layout="intrinsic"
-                  width={500}
-                  height={500}
-                  className="w-full h-auto object-cover rounded-lg shadow-lg"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <WEDDING />
 
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
-        <div className="container mx-auto px-4 md:px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">
-            NEWBORN/TODDLER
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {toddler.map((image, index) => (
-              <div key={index} className="relative">
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  layout="intrinsic"
-                  width={500}
-                  height={500}
-                  className="w-full h-auto object-cover rounded-lg shadow-lg"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <NEWBORNTODDLER />
 
       <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
         <div className="container mx-auto px-4 md:px-6">
