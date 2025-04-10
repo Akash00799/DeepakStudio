@@ -45,7 +45,7 @@ const HeroSection = () => {
         <div className="flex justify-center space-x-4">
           <Button
             size="lg"
-            className="px-8"
+            className="px-8 cursor-pointer"
             onClick={() => {
               const section = document.getElementById("services-section");
               section?.scrollIntoView({ behavior: "smooth" });
@@ -54,11 +54,17 @@ const HeroSection = () => {
             Get Started
           </Button>
 
-          <Link href="https://www.youtube.com/watch?v=UbXpRv5ApKA">
-            <Button size="lg" className="px-8" variant="outline">
-              Get Started
-            </Button>
-          </Link>
+          <Button
+            size="lg"
+            className="px-8 cursor-pointer"
+            variant="outline"
+            onClick={() => {
+              const formSection = document.getElementById("contact-section");
+              formSection?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            Contact Us
+          </Button>
         </div>
 
         <div className="hero-image-wrapper mt-5 md:mt-0">

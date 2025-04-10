@@ -1,10 +1,13 @@
 "use client";
 
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { FaLinkedin, FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
 import HeroSection from "@/components/hero";
 import PREWEDDING from "@/app/preWedding/page";
 import WEDDING from "@/app/wedding/page";
 import NEWBORNTODDLER from "@/app/newBornToddler/page";
-import Link from "next/link";
 import {
   Accordion,
   AccordionContent,
@@ -15,10 +18,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { faqs } from "@/data/faqs";
 import { features } from "@/data/features";
 import { testimonial } from "@/data/testimonial";
-import Image from "next/image";
-import React from "react";
-
-// Swiper imports
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -61,9 +60,55 @@ function page() {
         </div>
       </section>
 
+      {/* Floating Social Icons */}
+      <div
+        className="fixed top-1/2 right-4 transform -translate-y-1/2 z-50 flex flex-col items-center space-y-5 
+  p-4 w-20 rounded-xl 
+  bg-transparent backdrop-blur-lg 
+  border-2 border-transparent 
+  bg-clip-padding 
+  shadow-[0_4px_15px_rgba(0,0,0,0.2),0_8px_30px_rgba(0,0,0,0.3)]
+  border-gradient-to-br from-pink-500 via-purple-500 to-blue-500
+  animate-border"
+      >
+        <a
+          href="https://www.instagram.com/your-profile"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary hover:text-pink-500 text-2xl transition-transform hover:scale-110"
+        >
+          <FaInstagram />
+        </a>
+        <a
+          href="https://www.facebook.com/your-profile"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary hover:text-blue-500 text-2xl transition-transform hover:scale-110"
+        >
+          <FaFacebook />
+        </a>
+        <a
+          href="https://www.youtube.com/your-channel"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary hover:text-red-600 text-2xl transition-transform hover:scale-110"
+        >
+          <FaYoutube />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/your-profile"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary hover:text-blue-600 text-2xl transition-transform hover:scale-110"
+        >
+          <FaLinkedin />
+        </a>
+      </div>
+
       <section id="services-section">
         <PREWEDDING />
       </section>
+
       <WEDDING />
       <NEWBORNTODDLER />
 
@@ -191,6 +236,60 @@ function page() {
             We are proud to be recognized for our excellence and dedication to
             delivering top-notch solutions to our clients.
           </p>
+        </div>
+      </section>
+
+      <section
+        id="contact-section"
+        className="w-full py-12 md:py-24 lg:py-32 bg-muted/50 text-black"
+      >
+        <div className="container mx-auto px-4 md:px-6">
+          <h2 className="text-3xl font-bold text-center mb-8">
+            Get In Touch With Us
+          </h2>
+          <form
+            className="max-w-2xl mx-auto space-y-6 bg-background text-white p-6 rounded-xl shadow-md"
+            onSubmit={(e) => {
+              e.preventDefault();
+              alert("Form submitted!");
+            }}
+          >
+            <div>
+              <label className="block text-sm font-medium mb-1">Name</label>
+              <input
+                type="text"
+                required
+                placeholder="Enter your name"
+                className="w-full border border-gray-300 rounded-md px-4 py-2"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium mb-1">Email</label>
+              <input
+                type="email"
+                required
+                placeholder="Enter your email"
+                className="w-full border border-gray-300 rounded-md px-4 py-2"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium mb-1">Message</label>
+              <textarea
+                rows="4"
+                required
+                placeholder="Enter your message....."
+                className="w-full border border-gray-300 rounded-md px-4 py-2"
+              />
+            </div>
+            <div className="text-center">
+              <button
+                type="submit"
+                className="bg-primary text-black px-6 py-2 rounded-md hover:bg-primary/60 cursor-pointer transition"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
         </div>
       </section>
 
