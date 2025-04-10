@@ -43,11 +43,16 @@ const HeroSection = () => {
         </div>
 
         <div className="flex justify-center space-x-4">
-          <Link href="/dashboard">
-            <Button size="lg" className="px-8">
-              Get Started
-            </Button>
-          </Link>
+          <Button
+            size="lg"
+            className="px-8"
+            onClick={() => {
+              const section = document.getElementById("services-section");
+              section?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            Get Started
+          </Button>
 
           <Link href="https://www.youtube.com/watch?v=UbXpRv5ApKA">
             <Button size="lg" className="px-8" variant="outline">

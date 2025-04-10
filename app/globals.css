@@ -4,6 +4,10 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@import "swiper/css";
+@import "swiper/css/pagination";
+@import "swiper/css/navigation";
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -140,7 +144,6 @@
 }
 
 .hero-image {
-  /* transform: rotateX(20deg) scale(0.9) translateY(-50); */
   transform: rotateX(15deg) scale(1);
   transition: transform 0.5s ease-out;
   will-change: transform;
@@ -183,4 +186,21 @@
 .my-masonry-grid_column {
   padding-left: 1rem;
   background-clip: padding-box;
+}
+
+.custom-swiper-pagination .swiper-pagination-bullet {
+  background-color: lightgray;
+  opacity: 1;
+}
+
+.custom-swiper-pagination .swiper-pagination-bullet-active {
+  background-color: black;
+  transform: scale(1.2);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: black !important;
+  fill: black !important;
+  stroke: black !important;
 }

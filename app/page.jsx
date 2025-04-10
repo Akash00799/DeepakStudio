@@ -1,3 +1,5 @@
+"use client";
+
 import HeroSection from "@/components/hero";
 import PREWEDDING from "@/app/preWedding/page";
 import WEDDING from "@/app/wedding/page";
@@ -16,6 +18,13 @@ import { testimonial } from "@/data/testimonial";
 import Image from "next/image";
 import React from "react";
 
+// Swiper imports
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
 function page() {
   return (
     <div>
@@ -31,82 +40,111 @@ function page() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            {features.map((feature, index) => {
-              return (
-                <Link key={index} href={`/${feature.slug}`}>
-                  <Card className="border-2 hover:border-primary transition-colors duration-300 cursor-pointer">
-                    <CardContent className="pt-6 text-center flex flex-col items-center">
-                      <div className="flex flex-col items-center justify-center">
-                        {feature.icon}
-                        <h3 className="text-xl font-bold mb-2">
-                          {feature.title}
-                        </h3>
-                        <p className="text-muted-foreground">
-                          {feature.description}
-                        </p>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </Link>
-              );
-            })}
+            {features.map((feature, index) => (
+              <Link key={index} href={`/${feature.slug}`}>
+                <Card className="border-2 hover:border-primary transition-colors duration-300 cursor-pointer">
+                  <CardContent className="pt-6 text-center flex flex-col items-center">
+                    <div className="flex flex-col items-center justify-center">
+                      {feature.icon}
+                      <h3 className="text-xl font-bold mb-2">
+                        {feature.title}
+                      </h3>
+                      <p className="text-muted-foreground">
+                        {feature.description}
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
 
-      <PREWEDDING />
-
+      <section id="services-section">
+        <PREWEDDING />
+      </section>
       <WEDDING />
-
       <NEWBORNTODDLER />
 
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50 relative">
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="text-3xl font-bold tracking-tighter text-center mb-12">
-            What Our Users say
+            What Our Users Say
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {testimonial.map((testimonial, index) => {
-              return (
-                <Card key={index} className="bg-background">
-                  <CardContent className="pt-6 ">
-                    <div className="flex flex-col space-y-4">
-                      <div className="flex items-center space-x-4">
-                        <div className="relative h-12 w-12 flex-shrink-0">
-                          <Image
-                            width={40}
-                            height={40}
-                            src={testimonial.image}
-                            alt={testimonial.author}
-                            className="rounded-full object-cover border-2 border-primary/20"
-                          />
+
+          <div className="relative max-w-6xl mx-auto">
+            {/* Arrows Positioned Properly */}
+            <div className="absolute -left-20 top-1/2 -translate-y-1/2 z-10 hidden md:block">
+              <div className="swiper-button-prev text-primary" />
+            </div>
+            <div className="absolute -right-20 top-1/2 -translate-y-1/2 z-10 hidden md:block">
+              <div className="swiper-button-next text-primary" />
+            </div>
+
+            <Swiper
+              modules={[Navigation, Pagination, Autoplay]}
+              spaceBetween={20}
+              slidesPerView={1}
+              navigation={{
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              }}
+              pagination={{
+                clickable: true,
+                el: ".custom-swiper-pagination", // 👈 this makes it custom
+              }}
+              autoplay={{ delay: 3000 }}
+              breakpoints={{
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+              }}
+            >
+              {testimonial.map((item, index) => (
+                <SwiperSlide key={index}>
+                  <Card className="bg-background h-full">
+                    <CardContent className="pt-6 h-full">
+                      <div className="flex flex-col space-y-4 h-full justify-between">
+                        <div className="flex items-center space-x-4">
+                          <div className="relative h-12 w-12 flex-shrink-0">
+                            <Image
+                              width={40}
+                              height={40}
+                              src={item.image}
+                              alt={item.author}
+                              className="rounded-full object-cover border-2 border-primary/20"
+                            />
+                          </div>
+                          <div>
+                            <p className="font-semibold">{item.author}</p>
+                            <p className="text-sm text-muted-foreground">
+                              {item.role}
+                            </p>
+                            <p className="text-sm text-primary">
+                              {item.company}
+                            </p>
+                          </div>
                         </div>
-                        <div>
-                          <p className="font-semibold">{testimonial.author}</p>
-                          <p className="text-sm text-muted-foreground">
-                            {testimonial.role}
+                        <blockquote>
+                          <p className="text-muted-foreground italic relative mt-4">
+                            <span className="text-3xl text-primary absolute -top-4 -left-2">
+                              &quot;
+                            </span>
+                            {item.quote}
+                            <span className="text-3xl text-primary absolute -bottom-4">
+                              &quot;
+                            </span>
                           </p>
-                          <p className="text-sm text-primary">
-                            {testimonial.company}
-                          </p>
-                        </div>
+                        </blockquote>
                       </div>
-                      <blockquote>
-                        <p className="text-muted-foreground italic relative">
-                          <span className="text-3xl text-primary absolute -top-4 -left-2">
-                            &quot;
-                          </span>
-                          {testimonial.quote}
-                          <span className="text-3xl text-primary absolute -bottom-4">
-                            &quot;
-                          </span>
-                        </p>
-                      </blockquote>
-                    </div>
-                  </CardContent>
-                </Card>
-              );
-            })}
+                    </CardContent>
+                  </Card>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+
+            {/* 👇 Pagination dots outside swiper 👇 */}
+            <div className="custom-swiper-pagination flex justify-center mt-8" />
           </div>
         </div>
       </section>
@@ -136,13 +174,13 @@ function page() {
 
       <section className="w-full py-12 md:py-24 gradient rounded-lg text-black">
         <div className="container mx-auto flex flex-col items-center">
-          <div className="relative w-full  max-w-[500px]">
+          <div className="relative w-full max-w-[500px]">
             <Image
               src="/Awards.jpg"
               alt="logo"
-              layout="intrinsic" // Ensure the image maintains aspect ratio and is responsive
-              width={500} // Set initial width
-              height={60} // Set initial height
+              layout="intrinsic"
+              width={500}
+              height={60}
               className="w-full h-auto object-contain rounded-lg shadow-xl transition-transform transform hover:scale-105"
             />
           </div>
@@ -168,14 +206,12 @@ function page() {
           </div>
           <div className="max-w-6xl mx-auto">
             <Accordion type="single" collapsible className="w-full">
-              {faqs.map((faq, index) => {
-                return (
-                  <AccordionItem key={index} value={`item-${index}`}>
-                    <AccordionTrigger>{faq.question}</AccordionTrigger>
-                    <AccordionContent>{faq.answer}</AccordionContent>
-                  </AccordionItem>
-                );
-              })}
+              {faqs.map((faq, index) => (
+                <AccordionItem key={index} value={`item-${index}`}>
+                  <AccordionTrigger>{faq.question}</AccordionTrigger>
+                  <AccordionContent>{faq.answer}</AccordionContent>
+                </AccordionItem>
+              ))}
             </Accordion>
           </div>
         </div>

@@ -107,4 +107,40 @@ export const wedding = [
       },
     ],
   },
+  {
+    slug: "wedding-ritual-vibes",
+    title: "Wedding Ritual Vibes",
+    cover:
+      "https://www.taj.studio/wp-content/uploads/2018/05/Taj_0089-2-600x400.jpg",
+    tags: ["rituals", "tradition", "emotion"],
+    description: [
+      "Traditional wedding rituals filled with emotions and vibrant culture.",
+      "The couple honored every ritual with grace and devotion.",
+      "Captured in hues of love and sacred traditions.",
+    ],
+    images: [
+      {
+        src: "https://www.taj.studio/wp-content/uploads/2018/05/Taj_0089-2-600x400.jpg",
+        caption: "Sacred rituals, timeless memories",
+      },
+    ],
+  },
+  {
+    slug: "wedding-ritual-vibes",
+    title: "Wedding Ritual Vibes",
+    cover:
+      "https://www.taj.studio/wp-content/uploads/2018/05/Taj_0089-2-600x400.jpg",
+    tags: ["rituals", "tradition", "emotion"],
+    description: [
+      "Traditional wedding rituals filled with emotions and vibrant culture.",
+      "The couple honored every ritual with grace and devotion.",
+      "Captured in hues of love and sacred traditions.",
+    ],
+    images: [
+      {
+        src: "https://www.taj.studio/wp-content/uploads/2018/05/Taj_0089-2-600x400.jpg",
+        caption: "Sacred rituals, timeless memories",
+      },
+    ],
+  },
 ];
