@@ -47,7 +47,7 @@ const HeroSection = () => {
             size="lg"
             className="px-8 cursor-pointer"
             onClick={() => {
-              const section = document.getElementById("services-section");
+              const section = document.getElementById("portfolio");
               section?.scrollIntoView({ behavior: "smooth" });
             }}
           >

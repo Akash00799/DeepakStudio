@@ -31,7 +31,10 @@ function page() {
 
       <HeroSection />
 
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
+      <section
+        className="w-full py-12 md:py-24 lg:py-32 bg-background"
+        id="services-section"
+      >
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="text-3xl font-bold tracking-tighter text-center mb-12">
             "Discover Exceptional Services with Deepak Studio – Where Creativity
@@ -60,7 +63,6 @@ function page() {
         </div>
       </section>
 
-      {/* Floating Social Icons */}
       <div
         className="fixed top-1/2 right-4 transform -translate-y-1/2 z-50 flex flex-col items-center space-y-5 
   p-4 w-20 rounded-xl 
@@ -105,21 +107,23 @@ function page() {
         </a>
       </div>
 
-      <section id="services-section">
+      <section id="portfolio">
         <PREWEDDING />
       </section>
 
       <WEDDING />
       <NEWBORNTODDLER />
 
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50 relative">
+      <section
+        className="w-full py-12 md:py-24 lg:py-32 bg-muted/50 relative"
+        id="review"
+      >
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="text-3xl font-bold tracking-tighter text-center mb-12">
             What Our Users Say
           </h2>
 
           <div className="relative max-w-6xl mx-auto">
-            {/* Arrows Positioned Properly */}
             <div className="absolute -left-20 top-1/2 -translate-y-1/2 z-10 hidden md:block">
               <div className="swiper-button-prev text-primary" />
             </div>
@@ -188,7 +192,6 @@ function page() {
               ))}
             </Swiper>
 
-            {/* 👇 Pagination dots outside swiper 👇 */}
             <div className="custom-swiper-pagination flex justify-center mt-8" />
           </div>
         </div>
