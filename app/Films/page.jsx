@@ -91,7 +91,7 @@ export default function MarriageVideosPage() {
 
             <button
               onClick={() => setSelectedVideo(null)}
-              className="absolute -top-10 right-0 text-white text-4xl font-bold hover:text-red-500 cursor-pointer"
+              className="absolute -top-10 right-0 text-white text-4xl font-bold  cursor-pointer"
             >
               &times;
             </button>

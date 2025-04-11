@@ -34,11 +34,17 @@ function page() {
         <PREWEDDING />
       </section>
 
-      <WEDDING />
+      <section id="wedding">
+        <WEDDING />
+      </section>
 
-      <NEWBORNTODDLER />
+      <section id="newBornToddler">
+        <NEWBORNTODDLER />
+      </section>
 
-      <VideoPlayer />
+      <section id="films">
+        <VideoPlayer />
+      </section>
 
       <section id="review">
         <ReviewSection />

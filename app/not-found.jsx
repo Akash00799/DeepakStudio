@@ -11,7 +11,7 @@ export default function notFound() {
         moved.
       </p>
       <Link href="/">
-        <Button>Return Home</Button>
+        <Button className="cursor-pointer">Return Home</Button>
       </Link>
     </div>
   );

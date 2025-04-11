@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import websitelogo from "@/public/websitelogo.svg";
-import { FaFacebook, FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
 import { scrollToSection } from "./ui/scrollToSection";
 
 export default function FooterClient() {
@@ -10,7 +9,6 @@ export default function FooterClient() {
     <footer className="bg-[#111827] text-gray-300 py-10 sm:py-12 select-none">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="flex flex-col md:flex-row justify-between gap-10">
-          {/* Left Section */}
           <div className="md:w-1/3 text-center md:text-left">
             <div className="flex items-center gap-3 mb-2 justify-center md:justify-start">
               <Image src={websitelogo} alt="logo" width={40} height={40} />
@@ -23,7 +21,6 @@ export default function FooterClient() {
             </p>
           </div>
 
-          {/* Middle Section */}
           <div className="md:w-1/3 text-center">
             <h2 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">
               Quick Links
@@ -47,7 +44,6 @@ export default function FooterClient() {
             </ul>
           </div>
 
-          {/* Right Section */}
           <div className="md:w-1/3 text-center md:text-right">
             <h2 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">
               Get in Touch
@@ -56,12 +52,13 @@ export default function FooterClient() {
               <p>
                 📍{" "}
                 <a
-                  href="https://www.google.com/maps/place/City+Mall,+MG+Road,+Indore"
+                  href="https://maps.app.goo.gl/8Fiw4zeFPNwKTvKy9"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:underline text-blue-400"
                 >
-                  Near City Mall, MG Road, Indore, MP
+                  WTP Jawahar Lal Nehru Marg, D-Block, Malviya Nagar, Jaipur,
+                  Rajasthan 302017
                 </a>
               </p>
               <p>
@@ -73,51 +70,30 @@ export default function FooterClient() {
               <p>
                 📧{" "}
                 <a
-                  href="mailto:deepakstudio@gmail.com"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=deepakstudio@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:underline"
                 >
                   deepakstudio@gmail.com
                 </a>
               </p>
             </div>
-            <div className="flex justify-center md:justify-end space-x-4 text-xl sm:text-2xl">
-              <a
-                href="https://www.instagram.com/your-profile"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-pink-500 transition-transform hover:scale-110"
-              >
-                <FaInstagram />
-              </a>
-              <a
-                href="https://www.facebook.com/your-profile"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-blue-500 transition-transform hover:scale-110"
-              >
-                <FaFacebook />
-              </a>
-              <a
-                href="https://www.youtube.com/your-channel"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-red-600 transition-transform hover:scale-110"
-              >
-                <FaYoutube />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/your-profile"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-blue-400 transition-transform hover:scale-110"
-              >
-                <FaLinkedin />
-              </a>
-            </div>
           </div>
         </div>
 
-        {/* Bottom copyright */}
+        <div className="mt-5 rounded-xl overflow-hidden border border-gray-700 shadow-md">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.5888726013172!2d75.8020938748929!3d26.853025762653996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5d0abb464cf%3A0x43440aa416c9fdaf!2sWorld%20Trade%20Park!5e0!3m2!1sen!2sin!4v1744412150818!5m2!1sen!2sin"
+            width="100%"
+            height="200"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
         <div className="mt-8 text-center text-xs sm:text-sm border-t border-gray-700 pt-4">
           <p>
             © {new Date().getFullYear()} Deepak Studio. All rights reserved.

@@ -1,8 +1,15 @@
-import Link from "next/link";
 import { features } from "@/data/features";
 import { Card, CardContent } from "@/components/ui/card";
 
 function OurService() {
+  const handleScroll = (index) => {
+    const sectionIds = ["portfolio", "wedding", "films", "newBornToddler"];
+    const targetId = sectionIds[index];
+    const section = document.getElementById(targetId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-background select-none">
       <div className="container mx-auto px-4 sm:px-6">
@@ -15,6 +22,7 @@ function OurService() {
           {features.map((feature, index) => (
             <Card
               key={index}
+              onClick={() => handleScroll(index)}
               className="border-2 hover:border-primary transition-colors duration-300 cursor-pointer h-full"
             >
               <CardContent className="pt-6 text-center flex flex-col items-center h-full">
