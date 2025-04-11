@@ -1,6 +1,6 @@
 export default function FormSection() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50 text-black">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50 text-black select-none">
       <div className="container mx-auto px-4 md:px-6">
         <h2 className="text-3xl font-bold text-center mb-8">
           Get In Touch With Us

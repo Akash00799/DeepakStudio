@@ -8,7 +8,7 @@ import AlbumTags from "@/components/AlbumTags";
 import AlbumDescription from "@/components/AlbumDescription";
 import ImageGrid from "@/components/ImageGrid";
 import Lightbox from "@/components/Lightbox";
-import Link from "next/link";
+import BackButton from "@/components/BackButton";
 
 export default function PreWeddingDetailPage() {
   const { slug } = useParams();
@@ -33,7 +33,7 @@ export default function PreWeddingDetailPage() {
   if (!album) return <div className="text-center py-20">Album not found.</div>;
 
   return (
-    <section className="w-full py-12 md:py-20 bg-[#111] text-white">
+    <section className="w-full py-12 md:py-20 bg-[#111] text-white select-none">
       <div className="max-w-6xl mx-auto px-4">
         <AlbumHero cover={album.cover} title={album.title} />
         <AlbumTags tags={album.tags} />
@@ -49,14 +49,7 @@ export default function PreWeddingDetailPage() {
           setIsPaused={setIsPaused}
         />
 
-        <div className="mt-16 text-center">
-          <Link
-            href="/"
-            className="inline-block text-sm px-4 py-2 bg-white text-black rounded-full hover:bg-gray-200 transition"
-          >
-            ← Back to Pre-wedding
-          </Link>
-        </div>
+        <BackButton label={album.title} />
 
         {lightbox.open && (
           <Lightbox

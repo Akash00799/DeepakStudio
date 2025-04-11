@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 function OurService() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-background select-none">
       <div className="container mx-auto px-4 md:px-6">
         <h2 className="text-3xl font-bold tracking-tighter text-center mb-12">
           "Discover Exceptional Services with Deepak Studio – Where Creativity

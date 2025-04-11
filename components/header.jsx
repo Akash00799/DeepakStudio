@@ -5,7 +5,7 @@ import React from "react";
 
 function Header() {
   return (
-    <header className="fixed top-0 w-full border-b bg-background/80 backdrop-blur-md  z-50 supports-[backdrop-filter]:bg-background/60 flex items-center">
+    <header className="fixed top-0 w-full border-b bg-background/80 backdrop-blur-md  z-50 supports-[backdrop-filter]:bg-background/60 flex items-center select-none">
       <nav className="container mx-auto px-4  flex gap-4 items-center">
         <Image src={websitelogo} alt="logo" />
 

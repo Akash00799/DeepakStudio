@@ -9,10 +9,9 @@ import { FaFacebook, FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
 
 export default function FooterClient() {
   return (
-    <footer className="bg-[#111827] text-gray-300 py-12">
+    <footer className="bg-[#111827] text-gray-300 py-12 select-none">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between gap-10">
-          {/* About Section */}
           <div className="md:w-1/3 text-center md:text-left">
             <div className="flex items-center gap-4 mb-2 justify-center md:justify-start">
               <Image src={websitelogo} alt="logo" />
@@ -25,7 +24,6 @@ export default function FooterClient() {
             </p>
           </div>
 
-          {/* Quick Links */}
           <div className="md:w-1/3 text-center">
             <h2 className="text-xl font-bold mb-4">Quick Links</h2>
             <ul className="space-y-2 text-sm">
@@ -65,7 +63,6 @@ export default function FooterClient() {
             </ul>
           </div>
 
-          {/* Contact Info & Social Media */}
           <div className="md:w-1/3 text-center md:text-right">
             <h2 className="text-xl font-bold mb-4">Get in Touch</h2>
             <div className="text-sm mb-4 space-y-1">
@@ -133,7 +130,6 @@ export default function FooterClient() {
           </div>
         </div>
 
-        {/* Bottom Line */}
         <div className="mt-10 text-center text-sm border-t border-gray-700 pt-4">
           <p>
             © {new Date().getFullYear()} Deepak Studio. All rights reserved.

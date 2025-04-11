@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AwardSection() {
   return (
-    <section className="w-full py-12 md:py-24 gradient rounded-lg text-black">
+    <section className="w-full py-12 md:py-24 gradient rounded-lg text-black select-none">
       <div className="container mx-auto flex flex-col items-center">
         <div className="relative w-full max-w-[500px]">
           <Image

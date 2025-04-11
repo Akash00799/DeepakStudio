@@ -26,7 +26,7 @@ export default function Pagination({ currentPage, totalPages, onPageChange }) {
       <button
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
-        className="p-2 rounded-full border border-gray-300 bg-white hover:bg-gray-200 transition-all duration-300 disabled:opacity-40 disabled:cursor-not-allowed shadow-sm"
+        className="p-2 rounded-full border border-gray-300 bg-white hover:bg-gray-200 transition-all duration-300 disabled:opacity-40 disabled:cursor-not-allowed shadow-sm cursor-pointer"
         title="Previous"
       >
         <ChevronLeft className="w-5 h-5 text-gray-700" />
@@ -36,11 +36,13 @@ export default function Pagination({ currentPage, totalPages, onPageChange }) {
         <>
           <button
             onClick={() => onPageChange(1)}
-            className="w-9 h-9 rounded-full text-sm font-medium border border-gray-300 text-gray-700 hover:ring-2 hover:ring-gray-300 transition-all"
+            className="w-9 h-9 rounded-full text-sm font-medium border border-gray-300 text-gray-700 hover:ring-2 hover:ring-gray-300 transition-all cursor-pointer"
           >
             1
           </button>
-          <span className="px-1 text-gray-400 text-lg font-bold">...</span>
+          <span className="px-1 text-gray-400 text-lg font-bold cursor-pointer">
+            ...
+          </span>
         </>
       )}
 
@@ -51,7 +53,7 @@ export default function Pagination({ currentPage, totalPages, onPageChange }) {
           <button
             key={pageNum}
             onClick={() => onPageChange(pageNum)}
-            className={`w-10 h-10 rounded-full text-sm font-semibold border transition-all duration-300
+            className={`w-10 h-10 rounded-full text-sm font-semibold border transition-all duration-300 cursor-pointer
               ${
                 isActive
                   ? "bg-gradient-to-r from-gray-700 to-gray-800 text-white shadow-lg ring-2 ring-gray-500 scale-110"
@@ -65,10 +67,12 @@ export default function Pagination({ currentPage, totalPages, onPageChange }) {
 
       {currentPage < totalPages - 2 && totalPages > MAX_VISIBLE && (
         <>
-          <span className="px-1 text-gray-400 text-lg font-bold">...</span>
+          <span className="px-1 text-gray-400 text-lg font-bold cursor-pointer">
+            ...
+          </span>
           <button
             onClick={() => onPageChange(totalPages)}
-            className="w-9 h-9 rounded-full text-sm font-medium border border-gray-300 text-gray-700 hover:ring-2 hover:ring-gray-300 transition-all"
+            className="w-9 h-9 rounded-full text-sm font-medium border border-gray-300 text-gray-700 hover:ring-2 hover:ring-gray-300 transition-all cursor-pointer"
           >
             {totalPages}
           </button>
@@ -78,7 +82,7 @@ export default function Pagination({ currentPage, totalPages, onPageChange }) {
       <button
         onClick={() => onPageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
-        className="p-2 rounded-full border border-gray-300 bg-white hover:bg-gray-200 transition-all duration-300 disabled:opacity-40 disabled:cursor-not-allowed shadow-sm"
+        className="p-2 rounded-full border border-gray-300 bg-white hover:bg-gray-200 transition-all duration-300 disabled:opacity-40 disabled:cursor-not-allowed shadow-sm cursor-pointer"
         title="Next"
       >
         <ChevronRight className="w-5 h-5 text-gray-700" />
