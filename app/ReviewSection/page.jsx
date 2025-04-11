@@ -14,21 +14,22 @@ export default function ReviewSection() {
       id="review"
     >
       <div className="container mx-auto px-4 md:px-6">
-        <h2 className="text-3xl font-bold tracking-tighter text-center mb-12">
+        <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter text-center mb-10 sm:mb-12">
           What Our Users Say
         </h2>
 
         <div className="relative max-w-6xl mx-auto">
-          <div className="absolute -left-20 top-1/2 -translate-y-1/2 z-10 hidden md:block">
+          {/* Navigation Arrows (Hidden on Mobile) */}
+          <div className="absolute -left-6 sm:-left-10 top-1/2 -translate-y-1/2 z-10 hidden md:block">
             <div className="swiper-button-prev text-primary" />
           </div>
-          <div className="absolute -right-20 top-1/2 -translate-y-1/2 z-10 hidden md:block">
+          <div className="absolute -right-6 sm:-right-10 top-1/2 -translate-y-1/2 z-10 hidden md:block">
             <div className="swiper-button-next text-primary" />
           </div>
 
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
-            spaceBetween={20}
+            spaceBetween={16}
             slidesPerView={1}
             navigation={{
               nextEl: ".swiper-button-next",
@@ -36,10 +37,11 @@ export default function ReviewSection() {
             }}
             pagination={{
               clickable: true,
-              el: ".custom-swiper-pagination", // 👈 this makes it custom
+              el: ".custom-swiper-pagination",
             }}
             autoplay={{ delay: 3000 }}
             breakpoints={{
+              640: { slidesPerView: 1 },
               768: { slidesPerView: 2 },
               1024: { slidesPerView: 3 },
             }}
@@ -47,35 +49,32 @@ export default function ReviewSection() {
             {testimonial.map((item, index) => (
               <SwiperSlide key={index}>
                 <Card className="bg-background h-full">
-                  <CardContent className="pt-6 h-full">
-                    <div className="flex flex-col space-y-4 h-full justify-between">
+                  <CardContent className="pt-6 pb-4 px-4 h-full flex flex-col justify-between">
+                    <div className="flex flex-col space-y-4">
                       <div className="flex items-center space-x-4">
                         <div className="relative h-12 w-12 flex-shrink-0">
                           <Image
-                            width={40}
-                            height={40}
+                            width={48}
+                            height={48}
                             src={item.image}
                             alt={item.author}
                             className="rounded-full object-cover border-2 border-primary/20"
                           />
                         </div>
-                        <div>
-                          <p className="font-semibold">{item.author}</p>
-                          <p className="text-sm text-muted-foreground">
+                        <div className="flex flex-col">
+                          <p className="font-semibold text-sm sm:text-base">
+                            {item.author}
+                          </p>
+                          <p className="text-xs text-muted-foreground">
                             {item.role}
                           </p>
-                          <p className="text-sm text-primary">{item.company}</p>
+                          <p className="text-xs text-primary">{item.company}</p>
                         </div>
                       </div>
-                      <blockquote>
-                        <p className="text-muted-foreground italic relative mt-4">
-                          <span className="text-3xl text-primary absolute -top-4 -left-2">
-                            &quot;
-                          </span>
+
+                      <blockquote className="relative mt-4 pl-4 border-l-2 border-primary">
+                        <p className="text-sm sm:text-base text-muted-foreground italic">
                           {item.quote}
-                          <span className="text-3xl text-primary absolute -bottom-4">
-                            &quot;
-                          </span>
                         </p>
                       </blockquote>
                     </div>
@@ -85,6 +84,7 @@ export default function ReviewSection() {
             ))}
           </Swiper>
 
+          {/* Custom Pagination Dots */}
           <div className="custom-swiper-pagination flex justify-center mt-8" />
         </div>
       </div>

@@ -23,6 +23,10 @@ export const preWedding = [
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A9407-600x400.jpg",
         caption: "Eyes locked, hearts connected",
       },
+      {
+        src: "https://www.taj.studio/wp-content/uploads/2018/03/DJI_0806-600x400.jpg",
+        caption: "Overhead view of a tender moment",
+      },
     ],
   },
   {
@@ -49,6 +53,10 @@ export const preWedding = [
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A1201-1-600x400.jpg",
         caption: "In each other's arms",
       },
+      {
+        src: "https://www.taj.studio/wp-content/uploads/2018/03/049A9407-600x400.jpg",
+        caption: "Sun-kissed smiles",
+      },
     ],
   },
   {
@@ -74,6 +82,10 @@ export const preWedding = [
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A1360-600x400.jpg",
         caption: "Together in every era",
+      },
+      {
+        src: "https://www.taj.studio/wp-content/uploads/2018/03/049A1201-1-600x400.jpg",
+        caption: "Forever begins here",
       },
     ],
   },

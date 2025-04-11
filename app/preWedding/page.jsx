@@ -5,20 +5,21 @@ import { preWedding } from "../../data/preWedding";
 export default function PreWeddingPage() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50 select-none">
-      <div className="container mx-auto px-4 md:px-6">
-        <h2 className="text-3xl font-bold text-center mb-12 text-white">
+      <div className="container mx-auto px-4 sm:px-6">
+        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-10 sm:mb-12 text-white">
           PRE-WEDDING
         </h2>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {preWedding.map((album, index) => (
             <Link key={index} href={`/preWedding/${album.slug}`}>
-              <div className="group relative cursor-pointer overflow-hidden rounded-lg shadow-lg">
+              <div className="group relative cursor-pointer overflow-hidden rounded-lg shadow-lg h-full">
                 <Image
                   src={album.cover}
                   alt={album.title}
                   width={500}
                   height={500}
-                  className="w-full h-auto object-cover transform group-hover:scale-110 transition-all duration-500"
+                  className="w-full h-60 sm:h-72 md:h-80 object-cover transform group-hover:scale-110 transition-all duration-500"
                 />
 
                 {/* Dark overlay */}
@@ -26,7 +27,7 @@ export default function PreWeddingPage() {
 
                 {/* Title text */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500">
-                  <p className="text-white text-lg font-semibold">
+                  <p className="text-white text-base sm:text-lg font-semibold text-center px-2">
                     {album.title}
                   </p>
                 </div>

@@ -21,8 +21,8 @@ export default function WeddingPage() {
       ref={sectionRef}
       className="w-full py-12 md:py-24 lg:py-32 bg-muted/50 select-none"
     >
-      <div className="container mx-auto px-4 md:px-6">
-        <h2 className="text-3xl font-bold text-center mb-12 text-white">
+      <div className="container mx-auto px-4 sm:px-6">
+        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-10 sm:mb-12 text-white">
           WEDDING
         </h2>
 
@@ -35,7 +35,7 @@ export default function WeddingPage() {
                   alt={album.title}
                   width={500}
                   height={500}
-                  className="w-full h-auto object-cover transform group-hover:scale-110 transition-all duration-500"
+                  className="w-full h-60 sm:h-72 md:h-80 object-cover transform group-hover:scale-110 transition-all duration-500"
                 />
 
                 {/* Dark overlay */}
@@ -43,7 +43,7 @@ export default function WeddingPage() {
 
                 {/* Centered Title */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500">
-                  <p className="text-white text-lg font-semibold">
+                  <p className="text-white text-base sm:text-lg font-semibold text-center px-2">
                     {album.title}
                   </p>
                 </div>
@@ -53,14 +53,16 @@ export default function WeddingPage() {
         </div>
 
         {wedding.length > ITEMS_PER_PAGE && (
-          <Pagination
-            currentPage={currentPage}
-            totalPages={totalPages}
-            onPageChange={(page) => {
-              setCurrentPage(page);
-              sectionRef.current?.scrollIntoView({ behavior: "smooth" });
-            }}
-          />
+          <div className="mt-10">
+            <Pagination
+              currentPage={currentPage}
+              totalPages={totalPages}
+              onPageChange={(page) => {
+                setCurrentPage(page);
+                sectionRef.current?.scrollIntoView({ behavior: "smooth" });
+              }}
+            />
+          </div>
         )}
       </div>
     </section>

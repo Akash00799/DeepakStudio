@@ -11,6 +11,7 @@ import ReviewSection from "@/app/ReviewSection/page";
 import StudioAvailablity from "@/app/StudioAvailablity/page";
 import AwardSection from "@/app/AwardSection/page";
 import FormSection from "@/app/FormSection/page";
+import VideoPlayer from "@/app/Films/page";
 import QnA from "@/app/QnA/page";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -36,6 +37,8 @@ function page() {
       <WEDDING />
 
       <NEWBORNTODDLER />
+
+      <VideoPlayer />
 
       <section id="review">
         <ReviewSection />

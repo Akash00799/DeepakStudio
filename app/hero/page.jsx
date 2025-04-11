@@ -27,21 +27,21 @@ const HeroSection = () => {
 
   return (
     <section className="w-full pt-36 md:pt-48 pb-10 bg-background overflow-hidden select-none">
-      <div className="space-y-6 text-center">
+      <div className="space-y-6 text-center px-4 sm:px-6">
         <div className="space-y-6 mx-auto">
-          <h1 className="text-5xl font-bold md:text-6xl lg:text-7xl xl:text-8xl gradient-title">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold gradient-title">
             Capturing Moments
             <br />
             Creating Memories that last forever.
           </h1>
-          <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl">
+          <p className="mx-auto max-w-[600px] text-muted-foreground text-base sm:text-lg md:text-xl">
             From dreamy pre-wedding shoots to unforgettable wedding moments and
             cherished family portraits - we turn your special moments into
             timeless treasures.
           </p>
         </div>
 
-        <div className="flex justify-center space-x-4">
+        <div className="flex flex-col sm:flex-row justify-center sm:space-x-4 space-y-4 sm:space-y-0">
           <Button
             size="lg"
             className="px-8 cursor-pointer"
@@ -73,7 +73,7 @@ const HeroSection = () => {
               width={1280}
               height={720}
               alt="Banner sensai"
-              className="rounded-lg shadow-2xl border mx-auto"
+              className="w-full max-w-[90%] sm:max-w-2xl rounded-lg shadow-2xl border mx-auto"
               priority
             />
           </div>

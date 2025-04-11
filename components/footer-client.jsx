@@ -2,70 +2,57 @@
 
 import Image from "next/image";
 import websitelogo from "@/public/websitelogo.svg";
-import Link from "next/link";
-import { Button } from "./ui/button";
-import { scrollToSection } from "./ui/scrollToSection";
 import { FaFacebook, FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
+import { scrollToSection } from "./ui/scrollToSection";
 
 export default function FooterClient() {
   return (
-    <footer className="bg-[#111827] text-gray-300 py-12 select-none">
-      <div className="container mx-auto px-4">
+    <footer className="bg-[#111827] text-gray-300 py-10 sm:py-12 select-none">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="flex flex-col md:flex-row justify-between gap-10">
+          {/* Left Section */}
           <div className="md:w-1/3 text-center md:text-left">
-            <div className="flex items-center gap-4 mb-2 justify-center md:justify-start">
-              <Image src={websitelogo} alt="logo" />
-              <h2 className="text-xl font-bold">Deepak Studio</h2>
+            <div className="flex items-center gap-3 mb-2 justify-center md:justify-start">
+              <Image src={websitelogo} alt="logo" width={40} height={40} />
+              <h2 className="text-lg sm:text-xl font-bold">Deepak Studio</h2>
             </div>
-            <p className="text-sm">
+            <p className="text-sm sm:text-base">
               Capturing timeless memories through our expert lens. Specializing
               in Wedding Shoots, Pre-Wedding, Newborn, and Toddler Photography.
               Let us tell your story with beauty and emotion.
             </p>
           </div>
 
+          {/* Middle Section */}
           <div className="md:w-1/3 text-center">
-            <h2 className="text-xl font-bold mb-4">Quick Links</h2>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <span
-                  onClick={() => scrollToSection("services-section")}
-                  className="hover:underline cursor-pointer"
-                >
-                  Our Services
-                </span>
-              </li>
-
-              <li>
-                <span
-                  onClick={() => scrollToSection("portfolio")}
-                  className="hover:underline cursor-pointer"
-                >
-                  Portfolio
-                </span>
-              </li>
-              <li>
-                <span
-                  onClick={() => scrollToSection("contact-section")}
-                  className="hover:underline cursor-pointer"
-                >
-                  Contact Us
-                </span>
-              </li>
-              <li>
-                <span
-                  onClick={() => scrollToSection("review")}
-                  className="hover:underline cursor-pointer"
-                >
-                  Review
-                </span>
-              </li>
+            <h2 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">
+              Quick Links
+            </h2>
+            <ul className="space-y-2 text-sm sm:text-base">
+              {[
+                { label: "Our Services", section: "services-section" },
+                { label: "Portfolio", section: "portfolio" },
+                { label: "Contact Us", section: "contact-section" },
+                { label: "Review", section: "review" },
+              ].map((link, index) => (
+                <li key={index}>
+                  <span
+                    onClick={() => scrollToSection(link.section)}
+                    className="hover:underline cursor-pointer"
+                  >
+                    {link.label}
+                  </span>
+                </li>
+              ))}
             </ul>
           </div>
 
+          {/* Right Section */}
           <div className="md:w-1/3 text-center md:text-right">
-            <h2 className="text-xl font-bold mb-4">Get in Touch</h2>
-            <div className="text-sm mb-4 space-y-1">
+            <h2 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">
+              Get in Touch
+            </h2>
+            <div className="text-sm sm:text-base mb-4 space-y-1">
               <p>
                 📍{" "}
                 <a
@@ -86,14 +73,14 @@ export default function FooterClient() {
               <p>
                 📧{" "}
                 <a
-                  href="mailto:deepakstudio@email.com"
+                  href="mailto:deepakstudio@gmail.com"
                   className="hover:underline"
                 >
-                  deepakstudio@email.com
+                  deepakstudio@gmail.com
                 </a>
               </p>
             </div>
-            <div className="flex justify-center md:justify-end space-x-4 text-2xl">
+            <div className="flex justify-center md:justify-end space-x-4 text-xl sm:text-2xl">
               <a
                 href="https://www.instagram.com/your-profile"
                 target="_blank"
@@ -130,11 +117,14 @@ export default function FooterClient() {
           </div>
         </div>
 
-        <div className="mt-10 text-center text-sm border-t border-gray-700 pt-4">
+        {/* Bottom copyright */}
+        <div className="mt-8 text-center text-xs sm:text-sm border-t border-gray-700 pt-4">
           <p>
             © {new Date().getFullYear()} Deepak Studio. All rights reserved.
           </p>
-          <p className="text-xs mt-1">Made with ❤️ by Akash</p>
+          <p className="text-[10px] sm:text-xs mt-1">
+            Made with ❤️ by Akash IT Solution
+          </p>
         </div>
       </div>
     </footer>

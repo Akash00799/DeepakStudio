@@ -33,13 +33,13 @@ export default function PreWeddingDetailPage() {
   if (!album) return <div className="text-center py-20">Album not found.</div>;
 
   return (
-    <section className="w-full py-12 md:py-20 bg-[#111] text-white select-none">
-      <div className="max-w-6xl mx-auto px-4">
+    <section className="w-full py-10 sm:py-12 md:py-20 bg-[#111] text-white select-none">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
         <AlbumHero cover={album.cover} title={album.title} />
         <AlbumTags tags={album.tags} />
         <AlbumDescription description={album.description} />
 
-        <p className="text-sm text-gray-400 mb-6">
+        <p className="text-xs sm:text-sm text-gray-400 mb-4 sm:mb-6">
           Showing {album.images.length} beautiful moments
         </p>
 
@@ -49,7 +49,9 @@ export default function PreWeddingDetailPage() {
           setIsPaused={setIsPaused}
         />
 
-        <BackButton label={album.title} />
+        <div className="mt-6 sm:mt-10">
+          <BackButton label={album.title} />
+        </div>
 
         {lightbox.open && (
           <Lightbox

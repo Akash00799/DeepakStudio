@@ -8,7 +8,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Deepak-studio",
-  description: "",
+  description: "Deepak's personal studio website",
+  icons: {
+    icon: "/websitelogo.svg",
+  },
 };
 
 export default function RootLayout({ children }) {
