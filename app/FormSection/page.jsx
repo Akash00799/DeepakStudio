@@ -1,3 +1,5 @@
+"use client";
+
 export default function FormSection() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50 text-black select-none">

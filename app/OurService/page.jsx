@@ -1,3 +1,5 @@
+"use client";
+
 import { features } from "@/data/features";
 import { Card, CardContent } from "@/components/ui/card";
 

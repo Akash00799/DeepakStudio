@@ -1,3 +1,5 @@
+"use client";
+
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import { testimonial } from "@/data/testimonial";
@@ -19,7 +21,6 @@ export default function ReviewSection() {
         </h2>
 
         <div className="relative max-w-6xl mx-auto">
-          {/* Navigation Arrows (Hidden on Mobile) */}
           <div className="absolute -left-6 sm:-left-10 top-1/2 -translate-y-1/2 z-10 hidden md:block">
             <div className="swiper-button-prev text-primary" />
           </div>
@@ -84,7 +85,6 @@ export default function ReviewSection() {
             ))}
           </Swiper>
 
-          {/* Custom Pagination Dots */}
           <div className="custom-swiper-pagination flex justify-center mt-8" />
         </div>
       </div>
