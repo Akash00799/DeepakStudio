@@ -50,25 +50,25 @@ export default function FooterClient() {
             </h2>
             <div className="text-sm sm:text-base mb-4 space-y-1">
               <p>
-                📍{" "}
+                📍
                 <a
-                  href="https://maps.app.goo.gl/8Fiw4zeFPNwKTvKy9"
+                  href="https://maps.app.goo.gl/QPngMd8TgtAJiPf3A"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:underline text-blue-400"
                 >
-                  WTP Jawahar Lal Nehru Marg, D-Block, Malviya Nagar, Jaipur,
-                  Rajasthan 302017
+                  Deepak studio, near govt hospital Balaji makret, Bhadra,
+                  Rajasthan 335501
                 </a>
               </p>
               <p>
-                📞{" "}
-                <a href="tel:+919876543210" className="hover:underline">
-                  +91 98765 43210
+                📞
+                <a href="tel:+917665333352" className="hover:underline">
+                  +917665333352
                 </a>
               </p>
               <p>
-                📧{" "}
+                📧
                 <a
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=deepakstudio@gmail.com"
                   target="_blank"
@@ -84,7 +84,7 @@ export default function FooterClient() {
 
         <div className="mt-5 rounded-xl overflow-hidden border border-gray-700 shadow-md">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.5888726013172!2d75.8020938748929!3d26.853025762653996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5d0abb464cf%3A0x43440aa416c9fdaf!2sWorld%20Trade%20Park!5e0!3m2!1sen!2sin!4v1744412150818!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3486.0888893660026!2d75.1649611!3d29.103056999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3913efd1c5fecf31%3A0x782dc143ace20aba!2sDeepak%20Studio!5e0!3m2!1sen!2sin!4v1744787345138!5m2!1sen!2sin"
             width="100%"
             height="200"
             style={{ border: 0 }}

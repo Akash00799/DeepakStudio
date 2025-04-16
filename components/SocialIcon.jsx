@@ -14,7 +14,7 @@ export default function SocialIcon() {
   animate-border"
     >
       <a
-        href="https://www.instagram.com/your-profile"
+        href="https://www.instagram.com/deepakstudiobhadra?utm_source=qr&igsh=YW5zMGozcGJ5cndt"
         target="_blank"
         rel="noopener noreferrer"
         className="text-primary hover:text-pink-500 text-2xl transition-transform hover:scale-110"
@@ -22,7 +22,7 @@ export default function SocialIcon() {
         <FaInstagram />
       </a>
       <a
-        href="https://www.facebook.com/your-profile"
+        href="https://www.facebook.com/Deepakstudiobhadra/"
         target="_blank"
         rel="noopener noreferrer"
         className="text-primary hover:text-blue-500 text-2xl transition-transform hover:scale-110"
@@ -30,7 +30,7 @@ export default function SocialIcon() {
         <FaFacebook />
       </a>
       <a
-        href="https://www.youtube.com/your-channel"
+        href="https://youtube.com/@deepakstudiobhadra?si=E93fQVSpDjeDOAJB"
         target="_blank"
         rel="noopener noreferrer"
         className="text-primary hover:text-red-600 text-2xl transition-transform hover:scale-110"
@@ -38,7 +38,7 @@ export default function SocialIcon() {
         <FaYoutube />
       </a>
       <a
-        href="https://www.linkedin.com/in/your-profile"
+        href="https://www.justdial.com/Bhadra/Deepak-Studio-Near-Government-Hospital-Balaji-Katla-Market-Bhadra/9999P1552-1552-170116120134-I3I5_BZDET"
         target="_blank"
         rel="noopener noreferrer"
         className="text-primary hover:text-blue-600 text-2xl transition-transform hover:scale-110"
