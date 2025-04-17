@@ -25,7 +25,7 @@ export default function PreWeddingDetailPage() {
           ...prev,
           index: (prev.index + 1) % album.images.length,
         }));
-      }, 3000);
+      }, 20000);
     }
     return () => clearInterval(slideshowIntervalRef.current);
   }, [lightbox.open, isPaused]);
