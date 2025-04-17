@@ -3,13 +3,7 @@ import Image from "next/image";
 import { ArrowLeftCircle, ArrowRightCircle, XCircle } from "lucide-react";
 import { useRef } from "react";
 
-export default function Lightbox({
-  album,
-  lightbox,
-  setLightbox,
-  setIsPaused,
-  slideshowIntervalRef,
-}) {
+export default function Lightbox({ album, lightbox, setLightbox }) {
   const modalRef = useRef();
   const currentImage = album.images[lightbox.index];
 
@@ -40,8 +34,6 @@ export default function Lightbox({
         exit={{ opacity: 0 }}
         className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center"
         onClick={handleBackdropClick}
-        onMouseEnter={() => setIsPaused(true)}
-        onMouseLeave={() => setIsPaused(false)}
       >
         <div ref={modalRef} className="relative max-w-5xl mx-auto p-4">
           <motion.div
@@ -71,10 +63,7 @@ export default function Lightbox({
               size={40}
               color="white"
               className="cursor-pointer hover:scale-110"
-              onClick={() => {
-                handlePrev();
-                setIsPaused(true);
-              }}
+              onClick={handlePrev}
             />
           </div>
           <div className="absolute top-1/2 -translate-y-1/2 right-4">
@@ -82,10 +71,7 @@ export default function Lightbox({
               size={40}
               color="white"
               className="cursor-pointer hover:scale-110"
-              onClick={() => {
-                handleNext();
-                setIsPaused(true);
-              }}
+              onClick={handleNext}
             />
           </div>
           <div className="absolute top-4 right-4">
@@ -93,10 +79,7 @@ export default function Lightbox({
               size={36}
               color="white"
               className="cursor-pointer hover:scale-110"
-              onClick={() => {
-                setLightbox({ open: false, index: 0 });
-                clearInterval(slideshowIntervalRef.current);
-              }}
+              onClick={() => setLightbox({ open: false, index: 0 })}
             />
           </div>
         </div>

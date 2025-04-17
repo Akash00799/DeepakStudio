@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-export default function ImageGrid({ images, setLightbox, setIsPaused }) {
+export default function ImageGrid({ images, setLightbox }) {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6  items-center">
       {images.map((img, index) => (
@@ -13,7 +13,6 @@ export default function ImageGrid({ images, setLightbox, setIsPaused }) {
           transition={{ delay: index * 0.05 }}
           onClick={() => {
             setLightbox({ open: true, index });
-            setIsPaused(false);
           }}
         >
           <Image

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect, use } from "react";
+import { useState } from "react";
 import SmoothScrollWrapper from "@/components/SmoothScrollWrapper";
 import { preWedding } from "../../../data/preWedding";
 import { useParams } from "next/navigation";
@@ -16,20 +16,6 @@ export default function PreWeddingDetailPage() {
   const album = preWedding.find((a) => a.slug === slug);
 
   const [lightbox, setLightbox] = useState({ open: false, index: 0 });
-  const [isPaused, setIsPaused] = useState(false);
-  const slideshowIntervalRef = useRef(null);
-
-  useEffect(() => {
-    if (lightbox.open && !isPaused) {
-      slideshowIntervalRef.current = setInterval(() => {
-        setLightbox((prev) => ({
-          ...prev,
-          index: (prev.index + 1) % album.images.length,
-        }));
-      }, 3000);
-    }
-    return () => clearInterval(slideshowIntervalRef.current);
-  }, [lightbox.open, isPaused]);
 
   if (!album) return <div className="text-center py-20">Album not found.</div>;
 
@@ -45,11 +31,7 @@ export default function PreWeddingDetailPage() {
             Showing {album.images.length} beautiful moments
           </p>
 
-          <ImageGrid
-            images={album.images}
-            setLightbox={setLightbox}
-            setIsPaused={setIsPaused}
-          />
+          <ImageGrid images={album.images} setLightbox={setLightbox} />
 
           <div className="mt-6 sm:mt-10">
             <BackButton label={album.title} />
@@ -60,8 +42,6 @@ export default function PreWeddingDetailPage() {
               album={album}
               lightbox={lightbox}
               setLightbox={setLightbox}
-              setIsPaused={setIsPaused}
-              slideshowIntervalRef={slideshowIntervalRef}
             />
           )}
         </div>
