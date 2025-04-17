@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import SmoothScrollWrapper from "@/components/SmoothScrollWrapper";
 import HeroSection from "@/app/hero/page";
 import PREWEDDING from "@/app/preWedding/page";
 import WEDDING from "@/app/wedding/page";
@@ -17,9 +17,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-function page() {
+function Page() {
   return (
-    <div>
+    <SmoothScrollWrapper>
       <div className="grid-background"></div>
 
       <HeroSection />
@@ -59,8 +59,8 @@ function page() {
       </section>
 
       <QnA />
-    </div>
+    </SmoothScrollWrapper>
   );
 }
 
-export default page;
+export default Page;

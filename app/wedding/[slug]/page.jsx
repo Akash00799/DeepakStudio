@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import SmoothScrollWrapper from "@/components/SmoothScrollWrapper";
 import { wedding } from "../../../data/wedding";
 import { useParams } from "next/navigation";
 import AlbumHero from "@/components/AlbumHero";
@@ -39,42 +40,44 @@ export default function WeddingDetailPage() {
   }
 
   return (
-    <section className="w-full py-10 sm:py-12 md:py-20 bg-[#111] text-white select-none">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <AlbumHero cover={album.cover} title={album.title} />
+    <SmoothScrollWrapper>
+      <section className="w-full py-10 sm:py-12 md:py-20 bg-[#111] text-white select-none">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <AlbumHero cover={album.cover} title={album.title} />
 
-        <div className="mt-4 sm:mt-6">
-          <AlbumTags tags={album.tags} />
-        </div>
+          <div className="mt-4 sm:mt-6">
+            <AlbumTags tags={album.tags} />
+          </div>
 
-        <div className="mt-4 sm:mt-6">
-          <AlbumDescription description={album.description} />
-        </div>
+          <div className="mt-4 sm:mt-6">
+            <AlbumDescription description={album.description} />
+          </div>
 
-        <p className="text-xs sm:text-sm text-gray-400 mt-6 mb-4 sm:mb-6">
-          Showing {album.images.length} beautiful moments
-        </p>
+          <p className="text-xs sm:text-sm text-gray-400 mt-6 mb-4 sm:mb-6">
+            Showing {album.images.length} beautiful moments
+          </p>
 
-        <ImageGrid
-          images={album.images}
-          setLightbox={setLightbox}
-          setIsPaused={setIsPaused}
-        />
-
-        <div className="mt-6 sm:mt-10">
-          <BackButton label={album.title} />
-        </div>
-
-        {lightbox.open && (
-          <Lightbox
-            album={album}
-            lightbox={lightbox}
+          <ImageGrid
+            images={album.images}
             setLightbox={setLightbox}
             setIsPaused={setIsPaused}
-            slideshowIntervalRef={slideshowIntervalRef}
           />
-        )}
-      </div>
-    </section>
+
+          <div className="mt-6 sm:mt-10">
+            <BackButton label={album.title} />
+          </div>
+
+          {lightbox.open && (
+            <Lightbox
+              album={album}
+              lightbox={lightbox}
+              setLightbox={setLightbox}
+              setIsPaused={setIsPaused}
+              slideshowIntervalRef={slideshowIntervalRef}
+            />
+          )}
+        </div>
+      </section>
+    </SmoothScrollWrapper>
   );
 }
