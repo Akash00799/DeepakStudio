@@ -1,10 +1,21 @@
+"use client";
+
+import { useState, useRef, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { ArrowLeftCircle, ArrowRightCircle, XCircle } from "lucide-react";
-import { useRef } from "react";
 
 export default function Lightbox({ album, lightbox, setLightbox }) {
+  const [mounted, setMounted] = useState(false);
   const modalRef = useRef();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
   const currentImage = album.images[lightbox.index];
 
   const handleNext = () =>
@@ -25,7 +36,7 @@ export default function Lightbox({ album, lightbox, setLightbox }) {
     }
   };
 
-  return (
+  return createPortal(
     <AnimatePresence>
       <motion.div
         key="lightbox"
@@ -58,32 +69,27 @@ export default function Lightbox({ album, lightbox, setLightbox }) {
             )}
           </motion.div>
 
-          <div className="absolute top-1/2 -translate-y-1/2 left-4">
-            <ArrowLeftCircle
-              size={40}
-              color="white"
-              className="cursor-pointer hover:scale-110"
-              onClick={handlePrev}
-            />
-          </div>
-          <div className="absolute top-1/2 -translate-y-1/2 right-4">
-            <ArrowRightCircle
-              size={40}
-              color="white"
-              className="cursor-pointer hover:scale-110"
-              onClick={handleNext}
-            />
-          </div>
-          <div className="absolute top-4 right-4">
-            <XCircle
-              size={36}
-              color="white"
-              className="cursor-pointer hover:scale-110"
-              onClick={() => setLightbox({ open: false, index: 0 })}
-            />
-          </div>
+          <ArrowLeftCircle
+            size={40}
+            color="white"
+            className="absolute left-4 top-1/2 -translate-y-1/2 cursor-pointer hover:scale-110"
+            onClick={handlePrev}
+          />
+          <ArrowRightCircle
+            size={40}
+            color="white"
+            className="absolute right-4 top-1/2 -translate-y-1/2 cursor-pointer hover:scale-110"
+            onClick={handleNext}
+          />
+          <XCircle
+            size={36}
+            color="white"
+            className="absolute right-4 top-4 cursor-pointer hover:scale-110"
+            onClick={() => setLightbox({ open: false, index: 0 })}
+          />
         </div>
       </motion.div>
-    </AnimatePresence>
+    </AnimatePresence>,
+    document.body
   );
 }

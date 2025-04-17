@@ -8,14 +8,14 @@ import AlbumHero from "@/components/AlbumHero";
 import AlbumTags from "@/components/AlbumTags";
 import AlbumDescription from "@/components/AlbumDescription";
 import ImageGrid from "@/components/ImageGrid";
-import Lightbox from "@/components/Lightbox";
+// import Lightbox from "@/components/Lightbox";
 import BackButton from "@/components/BackButton";
 
 export default function PreWeddingDetailPage() {
   const { slug } = useParams();
   const album = preWedding.find((a) => a.slug === slug);
 
-  const [lightbox, setLightbox] = useState({ open: false, index: 0 });
+  // const [lightbox, setLightbox] = useState({ open: false, index: 0 });
 
   if (!album) return <div className="text-center py-20">Album not found.</div>;
 
@@ -31,19 +31,19 @@ export default function PreWeddingDetailPage() {
             Showing {album.images.length} beautiful moments
           </p>
 
-          <ImageGrid images={album.images} setLightbox={setLightbox} />
+          <ImageGrid images={album.images} />
 
           <div className="mt-6 sm:mt-10">
             <BackButton label={album.title} />
           </div>
 
-          {lightbox.open && (
+          {/* {lightbox.open && (
             <Lightbox
               album={album}
               lightbox={lightbox}
               setLightbox={setLightbox}
             />
-          )}
+          )} */}
         </div>
       </section>
     </SmoothScrollWrapper>
