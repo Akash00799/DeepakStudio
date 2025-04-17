@@ -4,11 +4,11 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "randomuser.me",
+        hostname: "**.taj.studio",
       },
       {
         protocol: "https",
-        hostname: "www.taj.studio", // Add this line to allow images from www.taj.studio
+        hostname: "randomuser.me",
       },
     ],
   },

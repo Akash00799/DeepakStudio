@@ -17,10 +17,12 @@ export default function ImageGrid({ images, setLightbox, setIsPaused }) {
           }}
         >
           <Image
+            unoptimized
             src={img.src}
             alt={img.caption || `Image ${index + 1}`}
             width={600}
             height={400}
+            loading="lazy"
             className="w-full h-auto object-cover rounded-md"
           />
         </motion.div>
