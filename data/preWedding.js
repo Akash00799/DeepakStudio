@@ -1,617 +1,617 @@
 export const preWedding = [
   {
-    slug: "taj-garden-shoot",
-    title: "Taj Garden Shoot",
+    slug: "dubai-shoot",
+    title: "Dubai Shoot",
     cover:
       "https://www.taj.studio/wp-content/uploads/2018/03/049A1852-2-600x400.jpg",
-    tags: ["garden", "taj", "romantic"],
+    tags: ["prewedding", "dubai", "romantic", "garden"],
     description: [
-      "The serene Taj Garden provided the perfect backdrop for this romantic shoot.",
-      "Namrata and Dhairya brought the place to life with their love and laughter.",
-      "Every frame captured the essence of their timeless bond in nature's lap.",
+      "Set against the elegant greenery of Dubai’s hidden gardens, this pre-wedding shoot captured timeless romance.",
+      "Namrata and Dhairya's chemistry lit up every frame with love, joy, and heartfelt moments.",
+      "From candid laughs to tender glances, each shot reflected the beautiful beginning of their forever journey.",
     ],
     images: [
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A0780-1200x800.jpg",
-        caption: "1",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A0830.jpg",
-        caption: "2",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A0844.jpg",
-        caption: "3",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A1182-1200x800.jpg",
-        caption: "4",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A0873-1200x800.jpg",
-        caption: "5",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A0892-1200x800.jpg",
-        caption: "6",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A0952-1200x800.jpg",
-        caption: "7",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A0910.jpg",
-        caption: "8",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A0989.jpg",
-        caption: "9",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A1100-1200x800.jpg",
-        caption: "10",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A1153.jpg",
-        caption: "11",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A1192.jpg",
-        caption: "12",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A1226.jpg",
-        caption: "13",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A1307.jpg",
-        caption: "14",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A1337.jpg",
-        caption: "15",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A1422.jpg",
-        caption: "16",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A1433.jpg",
-        caption: "17",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A1481.jpg",
-        caption: "18",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A1852-1200x800.jpg",
-        caption: "19",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A1523.jpg",
-        caption: "20",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A1563.jpg",
-        caption: "21",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/QMRV5138.jpg",
-        caption: "22",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/QMRV5143.jpg",
-        caption: "23",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A1876.jpg",
-        caption: "24",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A1947.jpg",
-        caption: "25",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A1952.jpg",
-        caption: "26",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A1965-1200x800.jpg",
-        caption: "27",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A2030-1200x800.jpg",
-        caption: "28",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A2060.jpg",
-        caption: "29",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A2008.jpg",
-        caption: "30",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A2038-1200x800.jpg",
-        caption: "31",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A2293-1200x800.jpg",
-        caption: "32",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A2267.jpg",
-        caption: "33",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A2357-1200x800.jpg",
-        caption: "34",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A2382.jpg",
-        caption: "35",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A2495-1200x800.jpg",
-        caption: "36",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A2827-1200x800.jpg",
-        caption: "37",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A2567.jpg",
-        caption: "38",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A2703.jpg",
-        caption: "39",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A2751.jpg",
-        caption: "40",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A2913.jpg",
-        caption: "41",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A3004-1200x800.jpg",
-        caption: "42",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A3067.jpg",
-        caption: "43",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A2515.jpg",
-        caption: "44",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A2527.jpg",
-        caption: "45",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A3299-1200x800.jpg",
-        caption: "46",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/049A3330.jpg",
-        caption: "47",
+        caption: " ",
       },
     ],
   },
 
   {
-    slug: "sunset-lakeside",
-    title: "Sunset Lakeside",
+    slug: "dubai-desertside",
+    title: "Dubai Desertside",
     cover:
       "https://www.taj.studio/wp-content/uploads/2018/03/049A1360-600x400.jpg",
-    tags: ["sunset", "lake", "love"],
+    tags: ["desert", "sunset", "prewedding", "romantic"],
     description: [
-      "The golden hues of the sunset created a magical atmosphere at the lakeside.",
-      "Our couple's chemistry sparkled as the sun dipped into the horizon.",
-      "Every shot was filled with warm tones and deep emotions.",
+      "The vast golden sands of Dubai's desert painted the perfect canvas for this pre-wedding shoot.",
+      "Bathed in warm sunset light, the couple shared intimate moments under the open sky.",
+      "Each frame echoed the calm, passion, and timeless love that bloomed amidst the dunes.",
     ],
     images: [
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0001-1200x800.jpg",
-        caption: "1",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0002-1200x799.jpg",
-        caption: "2",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0003-1200x799.jpg",
-        caption: "3",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0004-1200x800.jpg",
-        caption: "4",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0005-1200x799.jpg",
-        caption: "5",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0006-1200x800.jpg",
-        caption: "6",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0007-1200x800.jpg",
-        caption: "7",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0008-1200x800.jpg",
-        caption: "8",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0009-1200x800.jpg",
-        caption: "9",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0014.jpg",
-        caption: "10",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0010-1200x800.jpg",
-        caption: "11",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0011-1200x800.jpg",
-        caption: "12",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0012-1200x800.jpg",
-        caption: "13",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0013-1200x800.jpg",
-        caption: "14",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0015.jpg",
-        caption: "15",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0018-1200x799.jpg",
-        caption: "16",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0016-1200x799.jpg",
-        caption: "17",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0017-1200x799.jpg",
-        caption: "18",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0019.jpg",
-        caption: "19",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0020.jpg",
-        caption: "20",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0021.jpg",
-        caption: "21",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0022-1200x800.jpg",
-        caption: "22",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0023-1200x800.jpg",
-        caption: "23",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0024-1200x800.jpg",
-        caption: "24",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0025-1200x800.jpg",
-        caption: "25",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0026-1200x800.jpg",
-        caption: "26",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0027-1200x799.jpg",
-        caption: "27",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0028-1200x800.jpg",
-        caption: "28",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0029.jpg",
-        caption: "29",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0030.jpg",
-        caption: "30",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0031-1200x800.jpg",
-        caption: "31",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0032-1200x800.jpg",
-        caption: "32",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0033-1200x800.jpg",
-        caption: "33",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0034-1200x800.jpg",
-        caption: "34",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0035-1200x800.jpg",
-        caption: "35",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0036-1200x800.jpg",
-        caption: "36",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0037-1200x800.jpg",
-        caption: "37",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0038-1200x800.jpg",
-        caption: "38",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0039-1200x800.jpg",
-        caption: "39",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0042-1200x800.jpg",
-        caption: "40",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0041-1200x800.jpg",
-        caption: "41",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0040.jpg",
-        caption: "42",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0043-1200x800.jpg",
-        caption: "43",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0044-1200x800.jpg",
-        caption: "44",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0045-1200x800.jpg",
-        caption: "45",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0046-1200x800.jpg",
-        caption: "46",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0047-1200x800.jpg",
-        caption: "47",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0048-1200x800.jpg",
-        caption: "48",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0049-1200x800.jpg",
-        caption: "49",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0050-1200x800.jpg",
-        caption: "50",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0051-1200x800.jpg",
-        caption: "51",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0052.jpg",
-        caption: "52",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/Taj_0053-1200x800.jpg",
-        caption: "53",
+        caption: " ",
       },
     ],
   },
 
   {
-    slug: "vintage-car-love",
-    title: "Vintage Car Love",
+    slug: "mussoorie-photoshoot",
+    title: "Mussoorie Photoshoot",
     cover:
       "https://www.taj.studio/wp-content/uploads/2018/03/1T8A4607-1-600x400.jpg",
-    tags: ["vintage", "car", "classic"],
+    tags: ["mussoorie", "vintage", "prewedding", "romantic"],
     description: [
-      "Vintage cars and classic vibes met modern love in this timeless shoot.",
-      "From retro aesthetics to elegant poses, every detail was picture-perfect.",
-      "Namrata and Dhairya’s charm made this ride unforgettable.",
+      "Amidst the misty hills of Mussoorie, love blossomed in this magical pre-wedding shoot.",
+      "The vintage car added an old-world charm as the couple shared candid, heartfelt moments.",
+      "Wrapped in nature’s serenity, every frame captured their journey of togetherness and timeless elegance.",
     ],
     images: [
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A3682-1200x800.jpg",
-        caption: "1",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A3631-1200x800.jpg",
-        caption: "2",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A3686-1200x800.jpg",
-        caption: "3",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A3903-1200x800.jpg",
-        caption: "4",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A3989-1200x800.jpg",
-        caption: "5",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A3967-1200x800.jpg",
-        caption: "6",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A4401-1200x800.jpg",
-        caption: "7",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A3931.jpg",
-        caption: "8",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A4031-1.jpg",
-        caption: "9",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A4169-1200x800.jpg",
-        caption: "10",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A4188-1200x800.jpg",
-        caption: "11",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A4263-1200x800.jpg",
-        caption: "12",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A4304-1200x800.jpg",
-        caption: "13",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A4470-1200x800.jpg",
-        caption: "14",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A4485-1200x800.jpg",
-        caption: "15",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A4528-1200x800.jpg",
-        caption: "16",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A4440.jpg",
-        caption: "17",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A4489.jpg",
-        caption: "18",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A4534-1200x800.jpg",
-        caption: "19",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A4607-1200x800.jpg",
-        caption: "20",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A4624-1200x800.jpg",
-        caption: "21",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A4641-1200x800.jpg",
-        caption: "22",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A4682-1200x800.jpg",
-        caption: "23",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A4702-1200x800.jpg",
-        caption: "24",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A4732-1200x800.jpg",
-        caption: "25",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A4802-1200x800.jpg",
-        caption: "26",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A4756-1200x800.jpg",
-        caption: "27",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A4875-1200x800.jpg",
-        caption: "28",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A4897-1200x800.jpg",
-        caption: "29",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A4908-1200x800.jpg",
-        caption: "30",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A5135-1200x800.jpg",
-        caption: "31",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A4928-1200x800.jpg",
-        caption: "32",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A5153-1200x800.jpg",
-        caption: "33",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A5046.jpg",
-        caption: "34",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A5051.jpg",
-        caption: "35",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A5104.jpg",
-        caption: "36",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A5283-1200x800.jpg",
-        caption: "37",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A5107.jpg",
-        caption: "38",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A5218.jpg",
-        caption: "39",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A5324-1200x800.jpg",
-        caption: "40",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A5384-1200x800.jpg",
-        caption: "41",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A5388-1200x800.jpg",
-        caption: "42",
+        caption: " ",
       },
       {
         src: "https://www.taj.studio/wp-content/uploads/2018/03/1T8A5409.jpg",
-        caption: "43",
+        caption: " ",
       },
     ],
   },
